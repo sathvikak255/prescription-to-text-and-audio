@@ -40,9 +40,9 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
    cd prescription-to-text-and-audio
    ```
 2. Install dependencies:
-  ```bash
+     ```bash
      pip install -r requirements.txt
-  ```
+     ```
 3. Run the application:
    ```bash
    cd api/
