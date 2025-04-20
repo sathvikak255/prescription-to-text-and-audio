@@ -8,7 +8,6 @@ This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/
 - **OCR Integration:** Uses OCR techniques to convert handwritten prescriptions into machine-readable text.
 - **NER Model:** Classifies the extracted text to identify relevant categories such as medicine names and dosages. The NER model is the same one used in the original ScanPlus project, which leverages **BERT Embedding**, **CHAR CNN-BiLSTM**, and **CRF** techniques.
 - **Text-to-Speech (TTS):** Converts the processed prescription text (medicine names, dosages, and instructions) into audio, making it easier for patients with disabilities to access the information.
-- **Email Alert System (Optional):** Sends an email alert with the prescription details (medicines, doses, schedules) to the registered patient’s email address. This feature is based on the original ScanPlus project and can be optionally included.
 
 ---
 
@@ -17,22 +16,19 @@ This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/
 This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) pipeline by focusing on improving accessibility for patients, especially those with visual or cognitive impairments. 
 
 **The workflow:**
-1. **OCR (Optical Character Recognition)** converts handwritten prescriptions into machine-readable text.
+1. **OCR (AWS Textract)** converts handwritten prescriptions into machine-readable text.
 2. **NER (Named Entity Recognition):** The extracted text is processed by the same NER model from ScanPlus, which identifies medicine names, dosages, and schedules.
 3. **Text-to-Speech (TTS):** The extracted information is converted into speech, making the prescription information accessible for visually impaired patients.
-4. (Optional) **Email Alerts:** A notification containing the prescription information is sent to the patient's registered email address.
 
 ---
 
 ## 🛠️ **Technologies Used**
 
 - **Python**
-- **Tesseract OCR** for text extraction
+- **AWS Textract** for OCR (Optical Character Recognition)
 - **BERT** and **BiLSTM-CRF** for NER (Named Entity Recognition)
 - **Text-to-Speech (TTS):** For making prescriptions accessible through speech
-- **Flask:** For web interface (if applicable)
-- **Cron Jobs:** For scheduling tasks (if included)
-- **AWS (optional):** For cloud deployment of the model and services (only if applicable)
+- **Flask:** For web interface 
 
 ---
 
@@ -45,13 +41,15 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
    ```
 2. Install dependencies:
   ```bash
-    pip install -r requirements.txt
+  pip install -r requirements.txt
   ```
 3. Run the application:
    ```bash
    cd api/
    python api.py
    ```
+4. Use the TTS feature by uploading a prescription image, and the app will generate both text and speech output.
+
 ## 🎓 About ScanPlus
 ScanPlus is a powerful system that aims to digitize handwritten prescriptions and categorize them automatically. Here’s a quick overview of what ScanPlus does:
 
