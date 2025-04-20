@@ -41,7 +41,7 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
    ```
 2. Install dependencies:
   ```bash
-  pip install -r requirements.txt
+     pip install -r requirements.txt
   ```
 3. Run the application:
    ```bash
