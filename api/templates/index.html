@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Prescription</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Upload a Prescription Image</h1>
+
+    <form id="uploadForm">
+      <input type="file" name="image" class="file-input" required>
+      <br>
+      <button type="submit" id="uploadBtn" class="submit-btn">Upload</button>
+    </form>
+
+    <p id="loadingStatus" style="font-weight: bold;"></p>
+
+
+    <div id="result" class="result-box" style="display:none;">
+      <div class="result-label">Detected Medicines:</div>
+      <div id="medicineNames" class="result-text"></div>
+      <audio id="audioPlayer" class="audio-player" controls></audio>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

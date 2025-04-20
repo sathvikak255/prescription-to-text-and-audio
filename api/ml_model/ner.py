@@ -6,13 +6,11 @@ from sparknlp.training import CoNLL
 from sparknlp.base import DocumentAssembler
 import logging
 from pyspark.sql import functions as F
-
 from ml_model import detect_text
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
 
 class InitiateNER:
     def __init__(self, gpu=True, embedding_model='bert_base_uncased', language='en'):
@@ -72,6 +70,7 @@ class InitiateNER:
 
     def load_model(self, model_path):
         try:
+            # Using the appropriate method to load the trained NER model
             self.loaded_ner_model = NerDLModel.load(model_path) \
                 .setInputCols(["sentence", "token", "embeddings"]) \
                 .setOutputCol("ner")
@@ -116,9 +115,20 @@ class InitiateNER:
                 (entity.result, (entity.begin, entity.end))
             )
         return result_dict
-    
-ner_model = InitiateNER()
-# ner_model.train_model("../content/NERDataset.txt", "../content/model")
 
-ner_model.load_model("../content/model")
-print(ner_model.predict(detect_text("../images/prescriptions/check2.jpeg")))
+# Main logic for prediction (testing)
+
+if __name__ == "__main__":
+    ner_model = InitiateNER()
+    # ner_model.train_model("../content/NERDataset.txt", "../content/model")
+    
+    ner_model.load_model("../content/model")
+
+    # extracted_text = detect_text(
+    #     "../images/prescriptions/119.jpg", 
+    #     region_name="", 
+    #     aws_access_key_id="",
+    #     aws_secret_access_key=""
+    # )
+
+    # cd print(ner_model.predict(extracted_text))
