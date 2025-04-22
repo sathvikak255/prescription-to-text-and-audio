@@ -74,8 +74,5 @@ ScanPlus is a powerful system that aims to digitize handwritten prescriptions an
 For more information, check out the original ScanPlus repository.
 https://github.com/Gupta-Aryaman/scanPlus
 
-## 📝 License
-This project is licensed under the MIT License – see the LICENSE file for details.
-
 ## 🎯 Additional Notes
 This project highlights the importance of making healthcare information accessible to everyone, especially patients with disabilities. By converting prescription details into speech, we aim to reduce the barriers faced by people with visual impairments and help them better manage their health. 
