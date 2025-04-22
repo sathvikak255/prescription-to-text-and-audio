@@ -1,4 +1,4 @@
-# Prescription to Text and Audio
+# Handwritten Medicine Prescription to Text and Audio Conversion
 
 ## 📖 About the Project
 
