@@ -32,7 +32,7 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
 
 ---
 
-## 👩‍💻 **Installation**
+## 👩‍💻 **Set-up Instructions**
 
 1. Clone this repository:
    ```bash
@@ -48,12 +48,21 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
      ```bash
      pip install -r requirements.txt
      ```
-4. Run the application:
+4. Configure AWS Textract:
+   - Ensure you have AWS credentials configured. You can use the AWS CLI to set this up:
+   ```bash
+   aws configure
+   ```
+   - Add your region_name, aws_access_key_id and aws_secret_access_key in the api/ml_model/ml_model.py file.
+5. Create the model
+- Go in api/ml_model folder, and open ner.py
+- call the train_model function to the ner train the model
+6. Run the application:
    ```bash
    cd api/
    python api.py
    ```
-4. Use the TTS feature by uploading a prescription image, and the app will generate both text and speech output.
+7. Use the TTS feature by uploading a prescription image, and the app will generate both text and speech output.
 
 ## 🎓 About ScanPlus
 ScanPlus is a powerful system that aims to digitize handwritten prescriptions and categorize them automatically. Here’s a quick overview of what ScanPlus does:
