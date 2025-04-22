@@ -39,11 +39,16 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
    git clone https://github.com/sathvikak255/prescription-to-text-and-audio.git
    cd prescription-to-text-and-audio
    ```
-2. Install dependencies:
+2. Create Virtual Environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate      #On Windows use `venv\Scripts\activate`
+   
+3. Install dependencies:
      ```bash
      pip install -r requirements.txt
      ```
-3. Run the application:
+4. Run the application:
    ```bash
    cd api/
    python api.py
