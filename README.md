@@ -56,7 +56,7 @@ This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) 
    - Add your region_name, aws_access_key_id and aws_secret_access_key in the api/ml_model/ml_model.py file.
 5. Create the model
 - Go in api/ml_model folder, and open ner.py
-- call the train_model function to the ner train the model
+- Call the train_model function to the ner train the model. (make sure to pass the AWS Credentials in the detect_text() method.)
 6. Run the application:
    ```bash
    cd api/
