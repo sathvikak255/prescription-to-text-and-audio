@@ -11,7 +11,7 @@ The diagram below shows the end-to-end workflow, from scanned input to processed
 <p align="center">
   <img src="./api/images/PrescToTextAudio.png" width="800"/>
 </p>
-
+## 
 ### **Key Features:**
 - **OCR Integration:** Uses OCR techniques to convert handwritten prescriptions into machine-readable text.
 - **NER Model:** Classifies the extracted text to identify relevant categories such as medicine names and dosages. The NER model is the same one used in the original ScanPlus project, which leverages **BERT Embedding**, **CHAR CNN-BiLSTM**, and **CRF** techniques.
