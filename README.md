@@ -4,6 +4,12 @@
 
 This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) system, which is designed to convert handwritten doctor's prescriptions into machine-readable text. It uses Optical Character Recognition (OCR) and Named Entity Recognition (NER) models to extract information like medicine names, dosages, and schedules. My version builds on this core functionality and adds a **Text-to-Speech (TTS)** feature to enhance accessibility, especially for people with disabilities such as visual impairments or reading difficulties.
 
+## 📸 Project Overview
+
+<p align="center">
+  <img src=".api/images/PrescToTextAudio.png" width="800"/>
+</p>
+
 ### **Key Features:**
 - **OCR Integration:** Uses OCR techniques to convert handwritten prescriptions into machine-readable text.
 - **NER Model:** Classifies the extracted text to identify relevant categories such as medicine names and dosages. The NER model is the same one used in the original ScanPlus project, which leverages **BERT Embedding**, **CHAR CNN-BiLSTM**, and **CRF** techniques.
