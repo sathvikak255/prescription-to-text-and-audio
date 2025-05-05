@@ -6,6 +6,8 @@ This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/
 
 ## 📸 Project Overview
 
+The diagram below shows the end-to-end workflow, from scanned input to processed output.
+
 <p align="center">
   <img src="./api/images/PrescToTextAudio.png" width="800"/>
 </p>
