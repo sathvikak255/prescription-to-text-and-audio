@@ -17,6 +17,14 @@ This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/
 
 ---
 
+## 🎬 Live Demo
+
+Here’s the project in action:
+
+<p align="center">
+  <img src="./api/images/PrescToAudio.gif" width="800"/>
+</p>
+
 ## ⚙️ **Approach**
 
 This project enhances the [ScanPlus](https://github.com/Gupta-Aryaman/scanPlus) pipeline by focusing on improving accessibility for patients, especially those with visual or cognitive impairments. 
