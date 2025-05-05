@@ -7,7 +7,7 @@ This project is an extension of the [ScanPlus](https://github.com/Gupta-Aryaman/
 ## 📸 Project Overview
 
 <p align="center">
-  <img src=".api/images/PrescToTextAudio.png" width="800"/>
+  <img src="./api/images/PrescToTextAudio.png" width="800"/>
 </p>
 
 ### **Key Features:**
